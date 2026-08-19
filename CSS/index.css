@@ -1,1 +1,67 @@
+/* =====================================================
+   PREMIUM E-COMMERCE THEME
+===================================================== */
 
+:root {
+
+    /* =========================================
+       PREMIUM LUXURY COLOR SYSTEM
+       Midnight Navy + Burgundy + Rose Gold
+       ========================================= */
+
+    /* Primary - Midnight Navy */
+    --primary: #0B1220;
+    --primary-light: #151F33;
+    --primary-dark: #050A12;
+
+    /* Secondary - Burgundy */
+    --secondary: #5A1725;
+    --secondary-light: #76263A;
+    --secondary-dark: #3B0D17;
+
+    /* Luxury Accent - Rose Gold */
+    --accent: #C58B7B;
+    --accent-light: #D9A69A;
+    --accent-dark: #9D6658;
+
+    /* Background */
+    --background: #F7F3F0;
+    --background-light: #FCFAF8;
+    --surface: #FFFFFF;
+
+    /* Text */
+    --text-primary: #15171C;
+    --text-secondary: #686A70;
+    --text-muted: #9B9DA3;
+    --text-light: #FFFFFF;
+
+    /* Borders */
+    --border: #E5DEDA;
+    --border-dark: #CEC3BD;
+
+    /* Status */
+    --success: #287A5A;
+    --warning: #B98232;
+    --danger: #A83242;
+    --info: #486581;
+
+    /* Overlay / Shadow */
+    --overlay: rgba(11, 18, 32, 0.62);
+    --shadow: rgba(11, 18, 32, 0.12);
+
+    /* Optional Luxury Gradient */
+    --luxury-gradient: linear-gradient(
+        135deg,
+        #0B1220 0%,
+        #151F33 55%,
+        #5A1725 100%
+    );
+
+    /* Optional Rose Gold Gradient */
+    --rose-gradient: linear-gradient(
+        135deg,
+        #9D6658,
+        #C58B7B,
+        #D9A69A
+    );
+}
