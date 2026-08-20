@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Orders - Luxora Admin</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                LUXORA
+                <small>ADMIN PANEL</small>
+            </div>
+
+            <nav>
+
+                <a href="index.html">
+                    📊 Dashboard
+                </a>
+
+                <a href="products.html">
+                    🛍 Products
+                </a>
+
+                <a href="categories.html">
+                    🗂 Categories
+                </a>
+
+                <a href="users.html">
+                    👥 Users
+                </a>
+
+                <a href="orders.html"  class="active">
+                    📦 Orders
+                </a>
+
+                <a href="payments.html">
+                    💳 Payments
+                </a>
+
+                <a href="coupons.html">
+                    🎟 Coupons
+                </a>
+
+                <a href="reports.html">
+                    📈 Reports
+                </a>
+
+            </nav>
+
+
+            <!-- LOGOUT -->
+
+            <div class="sidebar-bottom">
+
+                <button class="logout-btn" onclick="adminLogout()">
+
+                    <span>↪</span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <main class="main">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Orders</h1>
+
+                    <p>
+                        Manage customer orders
+                    </p>
+
+                </div>
+
+            </header>
+
+
+            <section class="panel">
+
+                <div class="order-filters">
+
+                    <button onclick="filterOrders('All')">
+                        All
+                    </button>
+
+                    <button onclick="filterOrders('Pending')">
+                        Pending
+                    </button>
+
+                    <button onclick="filterOrders('Confirmed')">
+                        Confirmed
+                    </button>
+
+                    <button onclick="filterOrders('Shipped')">
+                        Shipped
+                    </button>
+
+                    <button onclick="filterOrders('Delivered')">
+                        Delivered
+                    </button>
+
+                </div>
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Order</th>
+                                <th>Customer</th>
+                                <th>Product</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Update</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="orderTable">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/database.js"></script>
+    <script src="js/orders.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>
