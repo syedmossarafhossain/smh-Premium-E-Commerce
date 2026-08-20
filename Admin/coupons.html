@@ -1,1 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coupons - Luxora Admin</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                LUXORA
+                <small>ADMIN PANEL</small>
+            </div>
+
+            <nav>
+
+                <a href="index.html">
+                    📊 Dashboard
+                </a>
+
+                <a href="products.html">
+                    🛍 Products
+                </a>
+
+                <a href="categories.html">
+                    🗂 Categories
+                </a>
+
+                <a href="users.html">
+                    👥 Users
+                </a>
+
+                <a href="orders.html">
+                    📦 Orders
+                </a>
+
+                <a href="payments.html">
+                    💳 Payments
+                </a>
+
+                <a href="coupons.html"  class="active">
+                    🎟 Coupons
+                </a>
+
+                <a href="reports.html">
+                    📈 Reports
+                </a>
+
+            </nav>
+
+
+            <!-- LOGOUT -->
+
+            <div class="sidebar-bottom">
+
+                <button class="logout-btn" onclick="adminLogout()">
+
+                    <span>↪</span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <main class="main">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Coupons</h1>
+
+                    <p>
+                        Manage discount coupons
+                    </p>
+
+                </div>
+
+                <button class="primary-btn" onclick="openCouponForm()">
+
+                    + Add Coupon
+
+                </button>
+
+            </header>
+
+
+            <!-- COUPON MODAL -->
+
+            <div id="couponModal" class="modal">
+
+                <div class="modal-content">
+
+                    <h2 id="couponFormTitle">
+                        Add Coupon
+                    </h2>
+
+
+                    <input type="hidden" id="couponId">
+
+
+                    <input id="couponCode" placeholder="Coupon Code">
+
+
+                    <select id="couponType">
+
+                        <option value="Percentage">
+                            Percentage
+                        </option>
+
+                        <option value="Fixed">
+                            Fixed Amount
+                        </option>
+
+                    </select>
+
+
+                    <input id="couponDiscount" type="number" placeholder="Discount">
+
+
+                    <div class="form-buttons">
+
+                        <button class="primary-btn" onclick="saveCoupon()">
+
+                            Save
+
+                        </button>
+
+                        <button class="cancel-btn" onclick="closeCouponForm()">
+
+                            Cancel
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TABLE -->
+
+            <section class="panel">
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+                                <th>Code</th>
+                                <th>Type</th>
+                                <th>Discount</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="couponTable"></tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/database.js"></script>
+    <script src="js/coupons.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>
