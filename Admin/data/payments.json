@@ -1,0 +1,26 @@
+[
+    {
+        "id": "PAY001",
+        "orderId": "ORD1001",
+        "customer": "Syed Mossaraf",
+        "amount": 4999,
+        "method": "UPI",
+        "status": "Success"
+    },
+    {
+        "id": "PAY002",
+        "orderId": "ORD1002",
+        "customer": "Rahul Kumar",
+        "amount": 7499,
+        "method": "Card",
+        "status": "Success"
+    },
+    {
+        "id": "PAY003",
+        "orderId": "ORD1003",
+        "customer": "Anjali Sharma",
+        "amount": 3299,
+        "method": "UPI",
+        "status": "Success"
+    }
+]
