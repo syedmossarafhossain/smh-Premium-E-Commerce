@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Premium Gold Watch",
+        "category": "Accessories",
+        "price": 4999,
+        "stock": 25,
+        "status": "Active"
+    },
+    {
+        "id": 2,
+        "name": "Wireless Headphones",
+        "category": "Electronics",
+        "price": 7499,
+        "stock": 40,
+        "status": "Active"
+    },
+    {
+        "id": 3,
+        "name": "Leather Premium Bag",
+        "category": "Fashion",
+        "price": 3299,
+        "stock": 18,
+        "status": "Active"
+    }
+]
