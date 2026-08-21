@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - Luxora Admin</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                LUXORA
+                <small>ADMIN PANEL</small>
+            </div>
+
+            <nav>
+
+                <a href="index.html">
+                    📊 Dashboard
+                </a>
+
+                <a href="products.html"  class="active">
+                    🛍 Products
+                </a>
+
+                <a href="categories.html">
+                    🗂 Categories
+                </a>
+
+                <a href="users.html">
+                    👥 Users
+                </a>
+
+                <a href="orders.html">
+                    📦 Orders
+                </a>
+
+                <a href="payments.html">
+                    💳 Payments
+                </a>
+
+                <a href="coupons.html">
+                    🎟 Coupons
+                </a>
+
+                <a href="reports.html">
+                    📈 Reports
+                </a>
+
+            </nav>
+
+
+            <!-- LOGOUT -->
+
+            <div class="sidebar-bottom">
+
+                <button class="logout-btn" onclick="adminLogout()">
+
+                    <span>↪</span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <main class="main">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Products</h1>
+
+                    <p>
+                        Manage your products
+                    </p>
+
+                </div>
+
+                <button class="primary-btn" onclick="openProductForm()">
+
+                    + Add Product
+
+                </button>
+
+            </header>
+
+
+            <!-- PRODUCT FORM -->
+
+            <div id="productForm" class="modal">
+
+                <div class="modal-content">
+
+                    <h2 id="formTitle">
+                        Add Product
+                    </h2>
+
+                    <input type="hidden" id="productId">
+
+
+                    <input id="productName" placeholder="Product Name">
+
+
+                    <input id="productCategory" placeholder="Category">
+
+
+                    <input id="productPrice" type="number" placeholder="Price">
+
+
+                    <input id="productStock" type="number" placeholder="Stock">
+
+
+                    <select id="productStatus">
+
+                        <option>
+                            Active
+                        </option>
+
+                        <option>
+                            Inactive
+                        </option>
+
+                    </select>
+
+
+                    <div class="form-buttons">
+
+                        <button class="primary-btn" onclick="saveProduct()">
+
+                            Save
+
+                        </button>
+
+                        <button class="cancel-btn" onclick="closeProductForm()">
+
+                            Cancel
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTS -->
+
+            <section class="panel">
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>ID</th>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Price</th>
+                                <th>Stock</th>
+                                <th>Status</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="productTable">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/database.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>
