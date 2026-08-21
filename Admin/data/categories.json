@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Electronics",
+        "products": 25
+    },
+    {
+        "id": 2,
+        "name": "Fashion",
+        "products": 40
+    },
+    {
+        "id": 3,
+        "name": "Accessories",
+        "products": 18
+    },
+    {
+        "id": 4,
+        "name": "Home & Living",
+        "products": 32
+    }
+]
