@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "code": "WELCOME10",
+        "type": "Percentage",
+        "discount": 10,
+        "status": "Active"
+    },
+    {
+        "id": 2,
+        "code": "LUXORA500",
+        "type": "Fixed",
+        "discount": 500,
+        "status": "Active"
+    }
+]
