@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports - Luxora Admin</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                LUXORA
+                <small>ADMIN PANEL</small>
+            </div>
+
+            <nav>
+
+                <a href="index.html">
+                    📊 Dashboard
+                </a>
+
+                <a href="products.html">
+                    🛍 Products
+                </a>
+
+                <a href="categories.html">
+                    🗂 Categories
+                </a>
+
+                <a href="users.html">
+                    👥 Users
+                </a>
+
+                <a href="orders.html">
+                    📦 Orders
+                </a>
+
+                <a href="payments.html">
+                    💳 Payments
+                </a>
+
+                <a href="coupons.html">
+                    🎟 Coupons
+                </a>
+
+                <a href="reports.html"  class="active">
+                    📈 Reports
+                </a>
+
+            </nav>
+
+
+            <!-- LOGOUT -->
+
+            <div class="sidebar-bottom">
+
+                <button class="logout-btn" onclick="adminLogout()">
+
+                    <span>↪</span>
+
+                    <span>Logout</span>
+
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <main class="main">
+
+            <header class="topbar">
+
+                <div>
+
+                    <h1>Reports & Analytics</h1>
+
+                    <p>
+                        Business performance overview
+                    </p>
+
+                </div>
+
+            </header>
+
+
+            <!-- REPORT CARDS -->
+
+            <section class="stats">
+
+                <div class="stat-card">
+
+                    <span class="stat-icon">
+                        ₹
+                    </span>
+
+                    <div>
+
+                        <p>Total Sales</p>
+
+                        <h2 id="totalSales">
+                            ₹0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-icon">
+                        📦
+                    </span>
+
+                    <div>
+
+                        <p>Total Orders</p>
+
+                        <h2 id="reportOrders">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-icon">
+                        💰
+                    </span>
+
+                    <div>
+
+                        <p>Revenue</p>
+
+                        <h2 id="reportRevenue">
+                            ₹0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <span class="stat-icon">
+                        👥
+                    </span>
+
+                    <div>
+
+                        <p>Customers</p>
+
+                        <h2 id="customerCount">
+                            0
+                        </h2>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BEST PRODUCTS -->
+
+            <section class="panel">
+
+                <div class="panel-title">
+
+                    <h2>
+                        Best Products
+                    </h2>
+
+                </div>
+
+                <div id="bestProducts"></div>
+
+            </section>
+
+
+            <!-- CUSTOMER STATISTICS -->
+
+            <section class="panel">
+
+                <div class="panel-title">
+
+                    <h2>
+                        Customer Statistics
+                    </h2>
+
+                </div>
+
+
+                <div id="customerStatistics"></div>
+
+            </section>
+
+
+            <!-- ORDER STATISTICS -->
+
+            <section class="panel">
+
+                <div class="panel-title">
+
+                    <h2>
+                        Order Statistics
+                    </h2>
+
+                </div>
+
+                <div id="orderStatistics"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/database.js"></script>
+    <script src="js/reports.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>
