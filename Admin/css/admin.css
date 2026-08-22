@@ -335,3 +335,25 @@ button {
         rgba(196,138,120,0.20);
 
 }
+
+/* active indicator */
+
+.sidebar nav a.active::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: -20px;
+
+    top: 8px;
+    bottom: 8px;
+
+    width: 3px;
+
+    border-radius: 0 5px 5px 0;
+
+    background:
+        var(--accent-light);
+
+}
