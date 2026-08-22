@@ -297,3 +297,41 @@ button {
         all .25s ease;
 
 }
+
+/* hover */
+
+.sidebar nav a:hover {
+
+    background:
+        rgba(255,255,255,0.07);
+
+    color:
+        var(--accent-light);
+
+    transform:
+        translateX(4px);
+
+}
+
+
+/* active */
+
+.sidebar nav a.active {
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(196,138,120,0.95),
+            rgba(196,138,120,0.72)
+        );
+
+    color:
+        #0A1020;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 25px
+        rgba(196,138,120,0.20);
+
+}
