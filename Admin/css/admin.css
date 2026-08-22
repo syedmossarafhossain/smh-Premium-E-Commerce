@@ -179,3 +179,23 @@ button {
 
     overflow-y: auto;
 }
+
+
+/* subtle luxury border */
+
+.sidebar::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 1px;
+    height: 100%;
+
+    background:
+        rgba(217,164,151,0.20);
+}
+
