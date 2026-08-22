@@ -374,3 +374,54 @@ button {
     padding: 34px;
 
 }
+
+/* =====================================================
+   TOPBAR
+   ===================================================== */
+
+.topbar {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    margin-bottom: 32px;
+
+}
+
+
+.topbar h1 {
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size: 36px;
+
+    font-weight: 600;
+
+    letter-spacing: -0.5px;
+
+    color:
+        var(--text-primary);
+
+}
+
+
+.topbar p {
+
+    color:
+        var(--text-secondary);
+
+    font-size: 13px;
+
+    margin-top: 4px;
+
+}
+
+
