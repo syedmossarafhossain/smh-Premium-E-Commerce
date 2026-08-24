@@ -565,3 +565,21 @@ button {
         0.8px;
 
 }
+
+.stat-card h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    margin-top:
+        3px;
+
+    font-size:
+        27px;
+
+    font-weight:
+        600;
+
+}
