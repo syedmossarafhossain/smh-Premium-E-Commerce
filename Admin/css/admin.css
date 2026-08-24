@@ -625,3 +625,22 @@ button {
         var(--shadow);
 
 }
+
+/* =====================================================
+   PANEL TITLE
+   ===================================================== */
+
+.panel-title {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    margin-bottom:
+        22px;
+
+}
