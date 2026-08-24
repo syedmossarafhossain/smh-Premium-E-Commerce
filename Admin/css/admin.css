@@ -550,4 +550,18 @@ button {
 
 }
 
+.stat-card p {
 
+    font-size:
+        11px;
+
+    color:
+        var(--text-secondary);
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        0.8px;
+
+}
