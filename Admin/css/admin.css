@@ -737,3 +737,10 @@ td {
         1px solid var(--border);
 
 }
+
+tr:hover td {
+
+    background:
+        #FCFAF8;
+
+}
