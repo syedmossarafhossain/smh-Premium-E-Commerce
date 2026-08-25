@@ -659,3 +659,16 @@ button {
         600;
 
 }
+
+.panel-title a {
+
+    color:
+        var(--accent-dark);
+
+    font-size:
+        12px;
+
+    font-weight:
+        600;
+
+}
