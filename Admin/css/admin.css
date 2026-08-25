@@ -721,3 +721,19 @@ th {
         1px solid var(--border);
 
 }
+
+td {
+
+    padding:
+        16px 14px;
+
+    font-size:
+        12px;
+
+    color:
+        var(--text-secondary);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
