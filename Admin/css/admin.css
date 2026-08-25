@@ -744,3 +744,42 @@ tr:hover td {
         #FCFAF8;
 
 }
+
+/* =====================================================
+   PRIMARY BUTTON
+   ===================================================== */
+
+.primary-btn {
+
+    background:
+        var(--luxury-gradient);
+
+    color:
+        white;
+
+    border:
+        none;
+
+    padding:
+        12px 20px;
+
+    border-radius:
+        7px;
+
+    font-size:
+        12px;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        0.3px;
+
+    box-shadow:
+        0 6px 18px
+        rgba(10,16,32,0.15);
+
+    transition:
+        all .25s ease;
+
+}
