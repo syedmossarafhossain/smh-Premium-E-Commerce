@@ -783,3 +783,21 @@ tr:hover td {
         all .25s ease;
 
 }
+
+
+.primary-btn:hover {
+
+    background:
+        var(--rose-gradient);
+
+    color:
+        white;
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(196,138,120,0.25);
+
+}
